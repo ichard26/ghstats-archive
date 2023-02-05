@@ -38,7 +38,7 @@ jobs:
           npm ci
           npm run build -- --base /ghstats/
           rm ../ghstats-data/assets -rf
-          cp dist/* ../ghstats-data -a
+          cp web/dist/* ../ghstats-data -a
 
       - name: Refresh repository data assets
         working-directory: ghstats-source
